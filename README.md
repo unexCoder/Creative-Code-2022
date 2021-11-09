@@ -2,6 +2,9 @@
 
 ## Repositorio
 
+En este repositorio encontrás todo el código, info y enlaces de todos los
+lenguajes que vamos a trabajar en el taller. 
+
 ### Processing
 
 https://processing.org/
