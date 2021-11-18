@@ -1,0 +1,88 @@
+// ITERACIONES - LOOPS
+
+// lAS ITERACIONES SON: EL PROCESO GENERATIVO DE REPETIR UNA REGLA
+// O CONJUNTO DE REGLAS UNA Y OTRA VEZ
+// CONSTITUYE UN CONCEPTO FUNDAMENTAL EN LA PROGRAMACIÓN
+
+// WHILE LOOP
+// UNA ESTRUCTURA WHILE EVALUA UNA CONDICION BOOLEANA Y EJECUTA
+// EL CÓDIGO QUE CONTIENE SI ESTA ES VERDADERA, EN FORMA REPETIDA
+// CUANDO LA CONDICION EVALUA FALSO, SE PRODUCE EL "ESCAPE" Y
+// SE CONTINUA LA EJECUCION DEL CODIGO QUE SIGUE AL LOOP 
+// pp.83 - Shiffman
+
+size(200, 200);
+smooth();
+int x = 50; // x de primer linea 
+int y = 80; // y de primer linea
+int espacio = 10; // espacio entre lineas
+// espacio = 4;
+int len = 20; // largo de cada linea
+stroke(0);
+
+int end = 150; // coordenada de finalización
+while (x <= end) {
+  line (x, y, x, y + len);
+  x = x + espacio;
+}                    
+
+// CONDICION DE "ESCAPE" pp. 86 - Shifmann
+// SI EL TEST BOOLEANO DENTRO DEL LOOP ES SIEMPRE VERDADERO
+// SE PRODUCE UN "LOOP INFINITO" QUE CUELGA EL PROGRAMA
+// HAY QUE SER MUY CUIDADOSO EN EVITAR ESTE TIPO DE ERROR
+
+/*
+int x = 0;
+ while (x < 10) {
+ println(x);
+ x = x – 1;
+ }
+ */
+
+// LOS LOOPS INFINITOS NO SIEMPRE SON TAN OBVIOS COMO EN EL EJ.
+// ANTERIOR
+// TENER CUIDADO AL USAR mouseX y mouseY EN CONDICIONES DE ESCAPE!!
+
+
+// EL LOOP "FOR" pp.87 - Shifmann
+// ESENCIALMENTE IGUAL AL ANTERIOR, PERO TIENE UNA SINTAXIS
+// MAS COMPACTA
+
+/*
+for (int i = 0; i < 10; i = i + 1) // Start at 0 and count up to 9. 
+ for (int i = 0; i < 101; i = i + 10) // Start at 0 and count up to 100 by 10. 
+ for (int i = 100; i > = 0; i = i – 5) // Start at 100 and count down to 0 by 5. 
+ */
+
+// EL LOOP FOR ESTA COMPUESTO DE TRES PARTES
+
+// INICIALIZACION: AQUI SE DECLARA E INICIALIZA UNA VARIABLE PARA
+// SER USADA EN EL CUERPO DEL LOOP, ESTA VARIABLE SE USA
+// MUY FRECUENTEMENTE COMO UN "COUNTER", UN CONTADOR
+// EL ALCANCE (SCOPE) DE LA VARIABLES ES EL PROPIO LOOP Y NO MAS 
+// ALLA DEL MISMO
+
+// TEST BOOLEANO: IGUAL QUE EN ESTRUCCTURAS CONDICIONALES Y LOOP
+// WHILE, DEBE EVALUAR VERDADERO O FALSO
+
+// EXPRESION DE ITERACION: UNA EXPRESION QUE COMUNMENTE SIRVE PARA
+// ACTUALIZAR EL CONTADOR Y QUE SE EJECUTA AL FINAL DE CADA CICLO
+// HASTA EL "ESCAPE"
+
+// OPERADORES DE INCREMENTO YT DECREMENTO
+// x++; 
+// x--;
+// x += 2;
+// x *= 3;
+// etc.
+for (int i = 20; i <= 120; i += espacio) {
+  line(i, 60, i, 60 + len);
+}
+
+// LA VARIABLE DECLARADA EN EL CUERPO DE UN LOOP ES LOCAL
+for (int i = 0; i < 200; i += 10) {
+  stroke(255);
+  fill(i);
+  rect(i, 150, 10, height);
+}
+
