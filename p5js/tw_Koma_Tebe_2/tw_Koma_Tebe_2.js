@@ -1,0 +1,1 @@
+t=0,draw=r=>{for(t||createCanvas(w=500,w,WEBGL),ortho(w/6,-w/6,w/3,-w/12,660,300),rotateX(PI),y=-w;y<w;y+=100)for(x=-w;x<w;x+=100)Y=y+t%100,push(),translate(x,60,222),rotateZ(sin(t/100)),noStroke(),fill(Y),sphere(Y,3,3),pop();t+=.5};

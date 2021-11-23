@@ -1,0 +1,1 @@
+f=0,a=4.2,b=4,draw=n=>{for(f||createCanvas(w=500,w,WEBGL),pointLight(w,w,w,-w,w),noStroke(ambientLight(w/4)),background(0),t=0;t<=w;t+=.11)fill(t),translate((a+b)*cos(t)-b*cos((a/b+1)*t+f),(p=(a+b)*sin(t)-b*sin((a/b+1)*t+f))-.03,.13),box(t/w*12);f+=.05};
