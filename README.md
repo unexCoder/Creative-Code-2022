@@ -28,9 +28,18 @@ reddit generative art
 https://www.reddit.com/r/generative/
 
 books
+
+generative art
+
 https://www.mat.ucsb.edu/~g.legrady/academic/courses/20f594/txt/generativeArt2.pdf
 
+generative design
+
 http://www.generative-gestaltung.de/2/
+
+10 print
+
+https://10print.org/
 
 video
 
@@ -44,7 +53,11 @@ https://vimeo.com/60731302
 
 +++++
 
+computer art history
+
 https://piratefsh.github.io/2019/01/07/computer-art-history-part-1.html
+
+the first decade in computer art
 
 https://monoskop.org/images/d/d7/Dietrich_Frank_Visual_Intelligence_The_First_Decade_of_Computer_Art_1965-1975_1986.pdf
 
