@@ -61,3 +61,6 @@ the first decade in computer art
 
 https://monoskop.org/images/d/d7/Dietrich_Frank_Visual_Intelligence_The_First_Decade_of_Computer_Art_1965-1975_1986.pdf
 
+50 ejemplos de arte generativo
+
+https://aiartists.org/generative-art-design
