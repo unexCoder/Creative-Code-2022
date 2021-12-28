@@ -82,9 +82,9 @@ rand(2.0)
 {funcion([x1,x2])}
 
 // FM > FREQ MODULATION
-{ SinOsc.ar(167 + SinOsc.ar(111,0,60000) ,0 ,0.5) * Env.perc(releaseTime:0.4).ar(2)   }.play(s,1)
+{ SinOsc.ar(167 + SinOsc.ar(111,0,60000) ,0 ,1)!2 * Env.perc(releaseTime:0.4).ar(2)   }.play
 
-{ FreeVerb.ar(SinOsc.ar(167 + SinOsc.ar(111,0,60000) ,0 ,0.5) * Env.perc(releaseTime:0.4).ar,0.5,5,4)   }.play(s,1)
+{ FreeVerb.ar(SinOsc.ar(167 + SinOsc.ar(111,0,60000) ,0 ,1)!2 * Env.perc(releaseTime:0.4).ar,0.5,5,4) }.play
 
 // DetectSilence
 
